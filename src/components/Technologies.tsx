@@ -24,11 +24,12 @@ function Technologies() {
 
         <div className="px-4 lg:px-8 grid lg:grid-cols-4 items-start gap-8">
           <div className="grid lg:grid-cols-3 col-span-3 gap-3.5 lg:gap-5">
-            
+
             <div className="border border-[#F1F5F9] rounded-2xl p-4 lg:p-5">
               <div className="flex items-center justify-between mb-3">
                 <div className="flex items-center gap-3">
-                  <img src={react_mobile_icon} alt="#react_icon" />
+                  <img src={react_icon} alt="#react_icon" className="hidden lg:block"/>
+                  <img src={react_mobile_icon} alt="#react_icon" className="block lg:hidden"/>
                   <p className="block lg:hidden font-secondary font-bold text-[16px] leading-5 text-[#111827]">
                     React
                   </p>
