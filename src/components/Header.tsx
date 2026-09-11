@@ -19,7 +19,7 @@ function Header() {
             >
               {isOpen ? <HiOutlineMenu /> : <HiOutlineX />}
             </button>
-            <div className="flex items-center gap-2 lg:gap-2.5 cursor-pointer">
+            <div className="flex items-center gap-1 lg:gap-2.5 cursor-pointer">
               <img
                 src={header_logo}
                 alt="#header_logo"
@@ -31,7 +31,7 @@ function Header() {
                 className="block lg:hidden"
               />
               <p className="font-bold capitalize font-primary text-[11px] lg:text-[20px]">
-                dev <span className="text-[#DB2777]">stack</span>
+                dev<span className="text-[#DB2777]">stack</span>
               </p>
             </div>
             <div className="hidden lg:flex capitalize gap-7.25 font-primary text-[14px] leading-5 font-medium text-[#475569]">
@@ -67,7 +67,7 @@ function Header() {
               </a>
             </div>
             <div>
-              <button className="capitalize mr-5 font-primary font-bold lg:font-medium text-[9px] lg:text-[14px] leading-5 text-[#334155] cursor-pointer hover:text-[#DB2777] transition-all duration-300">
+              <button className="capitalize mr-3 lg:mr-5 font-primary font-bold lg:font-medium text-[9px] lg:text-[14px] leading-5 text-[#334155] cursor-pointer hover:text-[#DB2777] transition-all duration-300">
                 sign in
               </button>
               <button className="capitalize font-primary font-semibold text-[9px] lg:text-[14px] leading-5 text-[#ffffff] px-2.5 lg:px-5 lg:py-2.5 bg-[#D91B7E] rounded-full cursor-pointer">
