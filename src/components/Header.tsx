@@ -31,7 +31,7 @@ function Header() {
                 className="block lg:hidden"
               />
               <p className="font-bold capitalize font-primary text-[11px] lg:text-[20px]">
-                dev<span className="text-[#DB2777]">stack</span>
+                dev <span className="text-[#DB2777]">Stack</span>
               </p>
             </div>
             <div className="hidden lg:flex capitalize gap-7.25 font-primary text-[14px] leading-5 font-medium text-[#475569]">
@@ -110,7 +110,6 @@ function Header() {
               </a>
             </div>
           )}
-
         </Container>
       </header>
     </>

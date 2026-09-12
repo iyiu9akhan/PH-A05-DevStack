@@ -5,7 +5,7 @@ function Banner() {
   return (
     <>
       <Container>
-        <div className="pt-[50.25px] lg:pt-35.5 lg:pb-39.5 lg:px-8 flex flex-col lg:flex-row justify-between items-center">
+        <div className="pt-[50.25px] lg:pt-35.5 lg:pb-39.5 lg:px-8 flex flex-col lg:flex-row justify-between items-center bg-[#FBFBFC] lg:bg-[#ffffff]">
           <div className="flex flex-col items-center lg:items-start">
             <h1 className="font-secondary font-bold lg:font-extrabold text-[30px] lg:text-[60px] leading-[37.5px] lg:leading-15 tracking-[-0.75px] lg:tracking-[-1.5px] text-[#0F172A] mb-3 lg:mb-6 text-center lg:text-left">
               Build Your Ideal
