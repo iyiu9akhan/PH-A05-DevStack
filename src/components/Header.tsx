@@ -8,7 +8,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(true);
   return (
     <>
-      <header className="border-b border-[#F1F5F9]">
+      <header className="sticky top-0 z-50 bg-white border-b border-[#F1F5F9]">
         <Container>
           <div className="flex items-center justify-between px-5 py-2 lg:px-8 lg:py-6 ">
             <button

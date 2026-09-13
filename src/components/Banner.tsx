@@ -24,10 +24,7 @@ function Banner() {
                 explore technologies
               </button>
               <button className="relative capitalize font-secondary lg:font-semibold text-[12px] lg:text-[14px] leading-4 text-[#374151] px-11.5 py-3 rounded-lg border border-[#E5E7EB] overflow-hidden group cursor-pointer transition-colors duration-300">
-                <span className="absolute inset-0 bg-linear-to-r from-[#F97316] to-[#EC4899] opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></span>
-                <span className="group-hover:text-white transition-colors duration-300">
                   Learn More
-                </span>
               </button>
             </div>
           </div>

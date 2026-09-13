@@ -27,14 +27,14 @@ function Footer() {
                   >
                     GitHub
                   </a>
-                  <span>•</span>
+                  <span className="block lg:hidden">•</span>
                   <a
                     href="#"
                     className="lg:hover:text-[#DB2777] transition-colors duration-200"
                   >
                     Twitter
                   </a>
-                  <span>•</span>
+                  <span className="block lg:hidden">•</span>
                   <a
                     href="#"
                     className="lg:hover:text-[#DB2777] transition-colors duration-200"

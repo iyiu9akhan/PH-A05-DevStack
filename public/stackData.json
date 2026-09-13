@@ -1,6 +1,8 @@
 [
   {
     "name": "React",
+    "web_icon": "img/web/react.png",
+    "mobile_icon":"img/mobile/react_mobile.png",
     "badge": "Popular",
     "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
     "category": "Frontend",
@@ -9,6 +11,8 @@
   },
   {
     "name": "Vue.js",
+    "web_icon": "img/web/vuejs.png",
+    "mobile_icon":"img/mobile/vue_mobile.png",
     "badge": "Versatile",
     "description": "An approachable, performant, and versatile framework for building web user interfaces.",
     "category": "Frontend",
@@ -17,6 +21,8 @@
   },
   {
     "name": "Svelte",
+    "web_icon": "img/web/svelte.png",
+    "mobile_icon": "img/mobile/svelte_mobile.png",
     "badge": "Fast",
     "description": "Cybernetically enhanced web apps with compile-time reactivity and zero virtual DOM overhead.",
     "category": "Frontend",
@@ -25,7 +31,9 @@
   },
   {
     "name": "Next.js",
-    "badge": null,
+    "web_icon": "img/web/nextjs.png",
+    "mobile_icon": "img/mobile/nextjs_mobile.png",
+    "badge": "SSR / Edge",
     "description": "The React framework for full-stack web applications with hybrid static & server rendering.",
     "category": "Frontend",
     "difficulty": "Intermediate",
@@ -33,6 +41,8 @@
   },
   {
     "name": "Node.js",
+    "web_icon": "img/web/nodejs.png",
+    "mobile_icon": "img/mobile/nodejs_mobile.png",
     "badge": "Standard",
     "description": "An asynchronous event-driven JavaScript runtime built on Chrome's V8 engine.",
     "category": "Backend",
@@ -41,6 +51,8 @@
   },
   {
     "name": "PostgreSQL",
+    "web_icon": "img/web/postgresql.png",
+    "mobile_icon": "img/mobile/postgresql_mobile.png",
     "badge": "Top SQL",
     "description": "A powerful, open-source object-relational database system with proven reliability.",
     "category": "Database",
@@ -49,6 +61,8 @@
   },
   {
     "name": "Redis",
+    "web_icon": "img/web/redis.png",
+    "mobile_icon": "img/web/redis.png",
     "badge": "Cache",
     "description": "In-memory data structure store used as a high-speed database, cache, and message broker.",
     "category": "Database",
@@ -57,6 +71,8 @@
   },
   {
     "name": "JavaScript",
+    "web_icon": "img/web/javascript.png",
+    "mobile_icon": "img/web/javascript.png",
     "badge": "Ubiquitous",
     "description": "The versatile, ubiquitous scripting language powering dynamic behavior across the web.",
     "category": "Language",
@@ -65,6 +81,8 @@
   },
   {
     "name": "TypeScript",
+    "web_icon": "img/web/typescript.png",
+    "mobile_icon": "img/web/typescript.png",
     "badge": "Essential",
     "description": "A strongly typed programming language that builds on JavaScript for robust tooling.",
     "category": "Language",
@@ -73,6 +91,8 @@
   },
   {
     "name": "Java",
+    "web_icon": "img/web/java.png",
+    "mobile_icon": "img/web/java.png",
     "badge": "Robust",
     "description": "A secure, object-oriented programming language designed for portability and scale.",
     "category": "Language",
@@ -81,6 +101,8 @@
   },
   {
     "name": "Tailwind CSS",
+    "web_icon": "img/web/tailwindcss.png",
+    "mobile_icon": "img/web/tailwindcss.png",
     "badge": "Modern",
     "description": "A utility-first CSS framework packed with classes that can be composed to build custom UI.",
     "category": "Styling",
@@ -89,6 +111,8 @@
   },
   {
     "name": "Docker",
+    "web_icon": "img/web/docker.png",
+    "mobile_icon": "img/mobile/docker_mobile.png",
     "badge": "Containers",
     "description": "A platform designed to build, share, and run containerized applications reliably.",
     "category": "DevOps",
