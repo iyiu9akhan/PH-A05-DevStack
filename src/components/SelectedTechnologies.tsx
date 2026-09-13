@@ -1,6 +1,7 @@
 import { FiPlus } from "react-icons/fi";
 import type { technologiesDataType } from "../types/technologiesType";
 import type { Dispatch, SetStateAction } from "react";
+import { toast } from "react-toastify";
 
 interface SelectedTechnologiesProps {
   selectedCard: technologiesDataType[];
@@ -12,6 +13,19 @@ function SelectedTechnologies({
   setSelectedCard,
 }: SelectedTechnologiesProps) {
   const isBlank = selectedCard.length === 0;
+
+  const handleRemove = (technologies: technologiesDataType) => {
+    const currentSelectedTechnologies = selectedCard.filter(
+      (selectedCard) => selectedCard.name != technologies.name,
+    );
+    setSelectedCard(currentSelectedTechnologies);
+    toast.success(`${technologies.name} removed from your stack!`);
+    // console.log(currentSelectedTechnologies)
+  };
+  const handleRemoveAll = () => {
+    setSelectedCard([]);
+    toast.success(`All technologies removed from your stack!`);
+  };
   return (
     <>
       <div className="p-5.25 border border-[#F1F5F9] rounded-2xl bg-[#ffffff]">
@@ -37,9 +51,12 @@ function SelectedTechnologies({
               {selectedCard.length} Technology Selected
             </p>
             <div className=" flex flex-col gap-1 justify-center pb-12">
-              {selectedCard.map((technologies: technologiesDataType) => {
+              {selectedCard.map((technologies: technologiesDataType, index) => {
                 return (
-                  <div className="flex items-center justify-between rounded-lg border border-[#E2E8F0] px-2.5 py-2.75 ">
+                  <div
+                    key={index}
+                    className="flex items-center justify-between rounded-lg border border-[#E2E8F0] px-2.5 py-2.75 "
+                  >
                     <div className="flex items-center gap-2">
                       <img src={technologies.mobile_icon} alt="#svelte_icon" />
                       <div className="flex flex-col">
@@ -51,12 +68,17 @@ function SelectedTechnologies({
                         </p>
                       </div>
                     </div>
-                    <FiPlus className="text-[#94A3B8] rotate-45 size-6 lg:cursor-pointer" />
+                    <span onClick={() => handleRemove(technologies)}>
+                      <FiPlus className="text-[#94A3B8] rotate-45 size-6 lg:cursor-pointer" />
+                    </span>
                   </div>
                 );
               })}
             </div>
-            <button className="capitalize py-1.75 border border-[#ED8C85] rounded-lg w-full text-[#D82C20] font-secondary font-semibold text-[14px] leading-4 cursor-pointer hover:bg-[#D82C20] hover:text-[#ffffff] transition-colors duration-300 mb-3.25">
+            <button
+              onClick={handleRemoveAll}
+              className="capitalize py-1.75 border border-[#ED8C85] rounded-lg w-full text-[#D82C20] font-secondary font-semibold text-[14px] leading-4 cursor-pointer hover:bg-[#D82C20] hover:text-[#ffffff] transition-colors duration-300 mb-3.25"
+            >
               remove all
             </button>
           </>

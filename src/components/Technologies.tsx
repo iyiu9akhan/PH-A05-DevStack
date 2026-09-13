@@ -10,6 +10,7 @@ import SelectedTechnologies from "./SelectedTechnologies";
 function Technologies({ technologies_info }: technologiesProps) {
   const technologies = use(technologies_info);
   const [selectedCard, setSelectedCard] = useState<technologiesDataType[]>([]);
+  
 
   return (
     <>
@@ -30,10 +31,12 @@ function Technologies({ technologies_info }: technologiesProps) {
           <div className="px-4 lg:px-8 grid lg:grid-cols-4 items-start gap-5 lg:gap-8">
             <div className="grid lg:grid-cols-3 lg:col-span-3 gap-3.5 lg:gap-5">
               {technologies.map((data, index: number) => {
+              const isSelected = selectedCard.some((item) => item.name === data.name);
                 return (
                   <TechnologiesCard
                     key={index}
                     data={data}
+                    isSelected={isSelected}
                     selectedCard={selectedCard}
                     setSelectedCard={setSelectedCard}
                   />

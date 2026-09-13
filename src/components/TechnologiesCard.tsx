@@ -1,23 +1,23 @@
 import { FaStar } from "react-icons/fa";
 import type { technologiesDataType } from "../types/technologiesType";
-import { useState, type Dispatch, type SetStateAction } from "react";
+import {  type Dispatch, type SetStateAction } from "react";
 import { toast } from "react-toastify";
 
 interface technologiesCardProps {
   data: technologiesDataType;
   selectedCard: technologiesDataType[];
   setSelectedCard: Dispatch<SetStateAction<technologiesDataType[]>>;
+  isSelected: boolean;
 }
 
 function TechnologiesCard({
   data,
   selectedCard,
+  isSelected,
   setSelectedCard,
 }: technologiesCardProps) {
-  const [isSelected, setIsSelected] = useState(false);
 
   const handleBtn = () => {
-    setIsSelected(true);
     toast.success(`${data.name} added to your stack!`);
     setSelectedCard([...selectedCard, data]);
   };

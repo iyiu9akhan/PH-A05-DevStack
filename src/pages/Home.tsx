@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Technologies from "../components/Technologies";
 import type { technologiesDataType } from "../types/technologiesType";
 import { ToastContainer } from "react-toastify";
+import Loader from "../components/Loader";
 
 const technologies_fetch = async (): Promise<technologiesDataType[]> => {
   const res = await fetch("./stackData.json");
@@ -18,7 +19,7 @@ function Home() {
     <>
       <Header />
       <Banner />
-      <Suspense fallback={<h1>loading...</h1>}>
+      <Suspense fallback={<Loader/>}>
         <Technologies technologies_info={technologies_info} />
         <ToastContainer/>
       </Suspense>
