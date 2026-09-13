@@ -1,75 +1,42 @@
-# React + TypeScript + Vite
+Project Name : DevStack
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Description : DevStack is a responsive web app , designed   for developers to explore and select various programming languages , frameworks and tools to build their ideal technology stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+Technology ussed: 
+  - Javascript + TypeScript
+  - React + Vite
+  - TailwindCSS + React Toastify 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+Features: 
+  - Responsive navigation header;
+  - Interactive stack builder;
+  - Responive technology card grid;
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+i. What is JSX, and why is it used in React? 
+  - jsx mean javascript xml , with this we can write html syntax directly in our js/ts files.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+ii. What is the difference between props and state?
+  - props: i can pass this from a parents component to a child component.
+  - state: i can manage this internally within the components and can change based on user actions.
 
-```
+iii. What does the useState hook do, and where did you use it in this project? 
+  - useState let use add and manage state variable in functional components. in this project i used it to toggle the mobile menu (hamburger menu icon), also i used this hook to track user's selected tech stack.
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+iv. What does the useEffect hook do, and why did you need it to load the JSON data?
+  - this hook can handle side effects , like data fetching. i need this hook to load json data asynchronously.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+v. Why does every item in a .map() list need a unique key prop?
+  - "Keys" help react to identify which items have changed , added, remooved and stable stable rendering. 
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+vi. What is conditional rendering? Show one place you used it (example: the empty stack message).
+ - conditional rendering is showing or hiding ui based on a condition. in this project , i used conditional rendering to displaying an empty stack message when no technology selected yet.
 
-```
+vii. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
+  - i passed data from a parent component to a child component by using props.
+  - parent component pass a function through props, child call that function to send back required data 
+

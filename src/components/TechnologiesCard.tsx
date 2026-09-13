@@ -27,7 +27,7 @@ function TechnologiesCard({
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-3">
           <img
-            src={data.web_icon}
+            src={data.icon}
             alt="#tech_icon"
             className="hidden lg:block"
           />

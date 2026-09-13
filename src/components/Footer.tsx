@@ -12,7 +12,7 @@ function Footer() {
                 <div className="flex gap-2.5 items-center mb-3">
                   <img src={footer_logo} alt="#footer_logo" />
                   <p className="font-primary font-bold text-[18px] leading-7 text-[#0F172A]">
-                    Dev <span className="text-[#DB2777]">Stack</span>
+                    Dev <span className="text-secondary-color">Stack</span>
                   </p>
                 </div>
                 <p className="font-secondary lg:font-primary text-[12px] leading-[19.5px] text-[#64748B] mb-[11.3px] lg:mb-6 text-center lg:text-start">
@@ -23,21 +23,21 @@ function Footer() {
                 <div className="font-primary font-semibold text-1[2px] leading-4 flex items-center justify-center gap-4 text-[#475569] lg:mb-14 mb-6">
                   <a
                     href="#"
-                    className="lg:hover:text-[#DB2777] transition-colors duration-200"
+                    className="lg:hover:text-secondary-color transition-colors duration-200"
                   >
                     GitHub
                   </a>
                   <span className="block lg:hidden">•</span>
                   <a
                     href="#"
-                    className="lg:hover:text-[#DB2777] transition-colors duration-200"
+                    className="lg:hover:text-secondary-color transition-colors duration-200"
                   >
                     Twitter
                   </a>
                   <span className="block lg:hidden">•</span>
                   <a
                     href="#"
-                    className="lg:hover:text-[#DB2777] transition-colors duration-200"
+                    className="lg:hover:text-secondary-color transition-colors duration-200"
                   >
                     LinkedIn
                   </a>

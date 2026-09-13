@@ -10,7 +10,6 @@ import SelectedTechnologies from "./SelectedTechnologies";
 function Technologies({ technologies_info }: technologiesProps) {
   const technologies = use(technologies_info);
   const [selectedCard, setSelectedCard] = useState<technologiesDataType[]>([]);
-  
 
   return (
     <>
@@ -19,7 +18,7 @@ function Technologies({ technologies_info }: technologiesProps) {
           <div className="lg:px-8">
             <h1 className="font-secondary font-bold text-[24px] leading-8 text-[#111827] lg:font-extrabold lg:text-[36px] lg:leading-10  lg:text-[#0F172A] mb-1 lg:mb-2 text-center lg:text-left pt-7.75 lg:mt-0">
               Explore the{" "}
-              <span className="bg-linear-to-r from-[#EC4899]  to-[#8B5CF6] bg-clip-text text-transparent">
+              <span className="bg-(image:--gradient-primary-brand) bg-clip-text text-transparent">
                 Technologies
               </span>
             </h1>
@@ -28,10 +27,12 @@ function Technologies({ technologies_info }: technologiesProps) {
             </p>
           </div>
 
-          <div className="px-4 lg:px-8 grid lg:grid-cols-4 items-start gap-5 lg:gap-8">
-            <div className="grid lg:grid-cols-3 lg:col-span-3 gap-3.5 lg:gap-5">
+          <div className="px-4 lg:px-8 grid md:grid-cols-3 lg:grid-cols-4 items-start gap-5 lg:gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 md:col-span-2 lg:col-span-3 gap-3.5 lg:gap-5">
               {technologies.map((data, index: number) => {
-              const isSelected = selectedCard.some((item) => item.name === data.name);
+                const isSelected = selectedCard.some(
+                  (item) => item.name === data.name,
+                );
                 return (
                   <TechnologiesCard
                     key={index}

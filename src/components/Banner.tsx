@@ -10,7 +10,7 @@ function Banner() {
             <h1 className="font-secondary font-bold lg:font-extrabold text-[30px] lg:text-[60px] leading-[37.5px] lg:leading-15 tracking-[-0.75px] lg:tracking-[-1.5px] text-[#0F172A] mb-3 lg:mb-6 text-center lg:text-left">
               Build Your Ideal
               <br />
-              <span className="inline-block bg-linear-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] bg-clip-text text-transparent">
+              <span className="inline-block bg-(image:--gradient-primary-brand) via-[#D81B7E] to-[#7C3AED] bg-clip-text text-transparent">
                 Development Stack
               </span>
             </h1>
@@ -20,7 +20,7 @@ function Banner() {
               project.
             </p>
             <div className="flex justify-center lg:block px-5 lg:px-0">
-              <button className="capitalize font-secondary lg:font-semibold text-[12px] lg:text-[14px] leading-4 text-[#ffffff] px-5.75 lg:px-2.75 py-3 rounded-lg mr-3 lg:mr-4 bg-linear-to-r from-[#F97316] to-[#EC4899] cursor-pointer">
+              <button className="capitalize font-secondary lg:font-semibold text-[12px] lg:text-[14px] leading-4 text-[#ffffff] px-5.75 lg:px-2.75 py-3 rounded-lg mr-3 lg:mr-4 bg-(image:--gradient-primary-brand) cursor-pointer">
                 explore technologies
               </button>
               <button className="relative capitalize font-secondary lg:font-semibold text-[12px] lg:text-[14px] leading-4 text-[#374151] px-11.5 py-3 rounded-lg border border-[#E5E7EB] overflow-hidden group cursor-pointer transition-colors duration-300">

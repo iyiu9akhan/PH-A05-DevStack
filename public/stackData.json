@@ -1,122 +1,134 @@
 [
   {
+    "id": 1,
     "name": "React",
-    "web_icon": "img/web/react.png",
-    "mobile_icon":"img/mobile/react_mobile.png",
-    "badge": "Popular",
+    "category": "Frontend",
     "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
-    "category": "Frontend",
+    "icon": "img/web/react.png",
+    "mobile_icon": "img/mobile/react_mobile.png",
+    "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "rating": 4.9
+    "badge": "Popular"
   },
   {
+    "id": 2,
     "name": "Vue.js",
-    "web_icon": "img/web/vuejs.png",
-    "mobile_icon":"img/mobile/vue_mobile.png",
-    "badge": "Versatile",
+    "category": "Frontend",
     "description": "An approachable, performant, and versatile framework for building web user interfaces.",
-    "category": "Frontend",
+    "icon": "img/web/vuejs.png",
+    "mobile_icon": "img/mobile/vue_mobile.png",
+    "rating": 4.8,
     "difficulty": "Beginner-Friendly",
-    "rating": 4.8
+    "badge": "Versatile"
   },
   {
+    "id": 3,
     "name": "Svelte",
-    "web_icon": "img/web/svelte.png",
-    "mobile_icon": "img/mobile/svelte_mobile.png",
-    "badge": "Fast",
+    "category": "Frontend",
     "description": "Cybernetically enhanced web apps with compile-time reactivity and zero virtual DOM overhead.",
-    "category": "Frontend",
+    "icon": "img/web/svelte.png",
+    "mobile_icon": "img/mobile/svelte_mobile.png",
+    "rating": 4.8,
     "difficulty": "Intermediate",
-    "rating": 4.8
+    "badge": "Fast"
   },
   {
+    "id": 4,
     "name": "Next.js",
-    "web_icon": "img/web/nextjs.png",
-    "mobile_icon": "img/mobile/nextjs_mobile.png",
-    "badge": "SSR / Edge",
-    "description": "The React framework for full-stack web applications with hybrid static & server rendering.",
     "category": "Frontend",
+    "description": "The React framework for full-stack web applications with hybrid static & server rendering.",
+    "icon": "img/web/nextjs.png",
+    "mobile_icon": "img/mobile/nextjs_mobile.png",
+    "rating": 4.9,
     "difficulty": "Intermediate",
-    "rating": 4.9
+    "badge": "SSR / Edge"
   },
   {
+    "id": 5,
     "name": "Node.js",
-    "web_icon": "img/web/nodejs.png",
-    "mobile_icon": "img/mobile/nodejs_mobile.png",
-    "badge": "Standard",
-    "description": "An asynchronous event-driven JavaScript runtime built on Chrome's V8 engine.",
     "category": "Backend",
+    "description": "An asynchronous event-driven JavaScript runtime built on Chrome's V8 engine.",
+    "icon": "img/web/nodejs.png",
+    "mobile_icon": "img/mobile/nodejs_mobile.png",
+    "rating": 4.8,
     "difficulty": "Intermediate",
-    "rating": 4.8
+    "badge": "Standard"
   },
   {
+    "id": 6,
     "name": "PostgreSQL",
-    "web_icon": "img/web/postgresql.png",
-    "mobile_icon": "img/mobile/postgresql_mobile.png",
-    "badge": "Top SQL",
+    "category": "Database",
     "description": "A powerful, open-source object-relational database system with proven reliability.",
-    "category": "Database",
+    "icon": "img/web/postgresql.png",
+    "mobile_icon": "img/mobile/postgresql_mobile.png",
+    "rating": 4.9,
     "difficulty": "Intermediate",
-    "rating": 4.9
+    "badge": "Top SQL"
   },
   {
+    "id": 7,
     "name": "Redis",
-    "web_icon": "img/web/redis.png",
-    "mobile_icon": "img/web/redis.png",
-    "badge": "Cache",
-    "description": "In-memory data structure store used as a high-speed database, cache, and message broker.",
     "category": "Database",
+    "description": "In-memory data structure store used as a high-speed database, cache, and message broker.",
+    "icon": "img/web/redis.png",
+    "mobile_icon": "img/web/redis.png",
+    "rating": 4.8,
     "difficulty": "Intermediate",
-    "rating": 4.8
+    "badge": "Cache"
   },
   {
+    "id": 8,
     "name": "JavaScript",
-    "web_icon": "img/web/javascript.png",
-    "mobile_icon": "img/web/javascript.png",
-    "badge": "Ubiquitous",
+    "category": "Language",
     "description": "The versatile, ubiquitous scripting language powering dynamic behavior across the web.",
-    "category": "Language",
+    "icon": "img/web/javascript.png",
+    "mobile_icon": "img/web/javascript.png",
+    "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "rating": 4.9
+    "badge": "Ubiquitous"
   },
   {
+    "id": 9,
     "name": "TypeScript",
-    "web_icon": "img/web/typescript.png",
-    "mobile_icon": "img/web/typescript.png",
-    "badge": "Essential",
+    "category": "Language",
     "description": "A strongly typed programming language that builds on JavaScript for robust tooling.",
-    "category": "Language",
+    "icon": "img/web/typescript.png",
+    "mobile_icon": "img/web/typescript.png",
+    "rating": 4.9,
     "difficulty": "Intermediate",
-    "rating": 4.9
+    "badge": "Essential"
   },
   {
+    "id": 10,
     "name": "Java",
-    "web_icon": "img/web/java.png",
-    "mobile_icon": "img/web/java.png",
-    "badge": "Robust",
-    "description": "A secure, object-oriented programming language designed for portability and scale.",
     "category": "Language",
+    "description": "A secure, object-oriented programming language designed for portability and scale.",
+    "icon": "img/web/java.png",
+    "mobile_icon": "img/web/java.png",
+    "rating": 4.6,
     "difficulty": "Intermediate",
-    "rating": 4.6
+    "badge": "Robust"
   },
   {
+    "id": 11,
     "name": "Tailwind CSS",
-    "web_icon": "img/web/tailwindcss.png",
-    "mobile_icon": "img/web/tailwindcss.png",
-    "badge": "Modern",
-    "description": "A utility-first CSS framework packed with classes that can be composed to build custom UI.",
     "category": "Styling",
+    "description": "A utility-first CSS framework packed with classes that can be composed to build custom UI.",
+    "icon": "img/web/tailwindcss.png",
+    "mobile_icon": "img/web/tailwindcss.png",
+    "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "rating": 4.9
+    "badge": "Modern"
   },
   {
+    "id": 12,
     "name": "Docker",
-    "web_icon": "img/web/docker.png",
-    "mobile_icon": "img/mobile/docker_mobile.png",
-    "badge": "Containers",
-    "description": "A platform designed to build, share, and run containerized applications reliably.",
     "category": "DevOps",
+    "description": "A platform designed to build, share, and run containerized applications reliably.",
+    "icon": "img/web/docker.png",
+    "mobile_icon": "img/mobile/docker_mobile.png",
+    "rating": 4.9,
     "difficulty": "Intermediate",
-    "rating": 4.9
+    "badge": "Containers"
   }
 ]

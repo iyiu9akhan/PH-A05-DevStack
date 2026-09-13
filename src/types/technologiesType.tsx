@@ -1,12 +1,13 @@
 export interface technologiesDataType {
+  id: number;
   name: string;
-  web_icon: string;
-  mobile_icon: string;
-  badge: string;
-  description: string;
   category: string;
-  difficulty: string;
+  description: string;
+  icon: string;
+  mobile_icon: string;
   rating: number;
+  difficulty: string;
+  badge: string;
 }
 
 export interface technologiesProps {
